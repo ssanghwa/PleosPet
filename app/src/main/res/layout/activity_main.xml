@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/door_position_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="도어 위치 조회 중…"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/door_range_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/read_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다시 읽기" />
+
+        <Button
+            android:id="@+id/set_one_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="위치 1로 설정" />
+
+        <Button
+            android:id="@+id/set_max_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="최대로 열기 (100)" />
+
+        <Button
+            android:id="@+id/set_zero_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="닫기 (0)" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/open_mirror_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="사이드미러 예제 열기" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사이드미러 열선 상태"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mirror_range_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="지원 범위 확인 중…"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/mirror_left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="LEFT 미러 열선: 조회 중…"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/mirror_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="RIGHT 미러 열선: 조회 중…"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mirror_read_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다시 읽기" />
+
+        <Button
+            android:id="@+id/mirror_heat_on_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="열선 켜기 요청 (1)" />
+
+        <Button
+            android:id="@+id/mirror_heat_off_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="열선 끄기 요청 (0)" />
+    </LinearLayout>
+
+</LinearLayout>

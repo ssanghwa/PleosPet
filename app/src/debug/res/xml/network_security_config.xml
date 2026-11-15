@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Debug builds only: the office network inspects HTTPS and re-signs it with the YURACORP root CA,
+     which the emulator does not know. Without this, HTTPS calls (weather) fail on the office network. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="@raw/corp_root_ca" />
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>

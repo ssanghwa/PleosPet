@@ -1,0 +1,22 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# 제출 자료
+플레오스의펫_접수양식_설계3.5팀.docx
+플레오스의펫_시연영상_설계3.5팀.webm
+
+# 외부 도구
+/tools/
